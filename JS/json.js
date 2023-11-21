@@ -1,6 +1,6 @@
-const user={id:1,name:'Sagor Alam',job:'Engineer'};
+const user = { id: 1, name: 'Sagor Alam', job: 'Engineer' };
 // javaScript Object Notation(json)
-const stringField=JSON.stringify(user);
+const stringField = JSON.stringify(user);
 
 // console.log(user);
 // console.log(stringField);
@@ -10,19 +10,22 @@ const stringField=JSON.stringify(user);
 {"id":1,"name":"Sagor Alam","job":"Engineer"}
 */
 
-const shop={
-    owner:'Sagor Alam',
-    address:{
-        street:'kochukhet',
-        city:'Dhaka',
-        country:'Bangladesh'
+const shop = {
+    owner: 'Sagor Alam',
+    address: {
+        street: 'kochukhet',
+        city: 'Dhaka',
+        country: 'Bangladesh'
     },
-    products:['laptop','mic','monitor','keyboard'],
-    revenue:45000,
-    isOpen:true,
-    isNew:false
-} 
-const shopJson=JSON.stringify(shop);
+    products: ['laptop', 'mic', 'monitor', 'keyboard'],
+    revenue: 45000,
+    isOpen: true,
+    isNew: false
+}
+const shopJson = JSON.stringify(shop);
 
 // console.log(shop);
 console.log(shopJson);
+
+const shopObject=JSON.parse(shopJson);
+console.log(shopObject);
