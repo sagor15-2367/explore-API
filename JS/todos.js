@@ -6,15 +6,15 @@ function loadTodos() {
 
 function displayTodos(todos) {
     // get the container
-    const todoContainer=document.getElementById('todo-container');
-    for(const todo of todos){
+    const todoContainer = document.getElementById('todo-container');
+    for (const todo of todos) {
         // create the child element
-        const todoDiv=document.createElement('div');
+        const todoDiv = document.createElement('div');
         // set innerText or innerHTML
-        todoDiv.innerHTML=`
-        <h3>title: ${todo.title}</h3>
-        <p>User: ${todo.userId}</p>
-        <p> Is completed: ${todo.completed === true ? 'complate':'not complate'}</p>
+        todoDiv.innerHTML = `
+        <h3>title: ${ todo.title }</h3>
+        <p>User: ${ todo.userId }</p>
+        <p> Is completed: ${ todo.completed === true ? 'complate' : 'not complate' }</p>
         `
         // appendChild
         todoContainer.appendChild(todoDiv)
